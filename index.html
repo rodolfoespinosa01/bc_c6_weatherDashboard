@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <header class="linear-gradient">
+      <p><strong>Weather Dashboard</strong></p>
+    </header>
+
+    <main>
+
+      <section class="sectionLeft">
+        <h1>Search for a City:</h1>
+        <input type="text" placeholder="San Diego" id="userInput">
+        <button id="searchButton">Search</button>
+        <hr>
+        <button class="cityButton">Atlanta</button>
+        <button class="cityButton">Denver</button>
+        <button class="cityButton">Seattle</button>
+        <button class="cityButton">San Francisco</button>
+        <button class="cityButton">Orlando</button>
+        <button class="cityButton">New York</button>
+        <button class="cityButton">Chicago</button>
+        <button class="cityButton">Austin</button>
+      </section>
+
+
+      <section class="sectionRight">
+        <section class="topRight">
+          <h1 class="dataResult"><span id="cityResult">Atlanta </span><span id="dateResult">(9/13/2022)</span></h1>
+          <div class="smallData">
+            <p class="dataResult">Temp: <span id="tempResult">76.62&deg;F</span></p>
+            <p class="dataResult"> Wind: <span id="windResult">8.43</span><span> MPH</span></p>
+            <p class="dataResult">Humidity: <span id="humidityResult">44</span><span> %</span></p>
+          </div>
+
+        </section>
+        <section class="bottomLeft">
+
+        </section>
+      </section>
+
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+
+</html>

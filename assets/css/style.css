@@ -1,0 +1,94 @@
+/* Page Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body main {
+  display: flex;
+}
+
+/* Header */
+
+header p {
+  color: white;
+  padding: 14px;
+  margin-left: 50vw;
+  font-size: 34px;
+}
+
+.linear-gradient {
+  background: linear-gradient(to right, #475ab8, #281764);
+}
+
+/* Left Section */
+.sectionLeft {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  padding: 10px;
+}
+
+.sectionLeft h1 {
+  color: #191918;
+}
+
+#searchButton {
+  background-color: #6991e3;
+  color: #e1e2e2
+}
+
+.sectionLeft>* {
+  margin: 5px;
+}
+
+.sectionLeft button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: small;
+}
+
+.cityButton {
+  background-color: #aeaeae;
+  color: #1f2023
+}
+
+#userInput {
+  padding: 10px;
+}
+
+/* Right Section */
+
+.sectionRight {
+  width: 80vw;
+  padding: 10px;
+}
+
+/* Top Right Section */
+
+.topRight {
+  height: 150px;
+  border: 1px solid;
+  color: #191918;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRight h1 {
+  font-size: 1.5em;
+}
+
+.dataResult {
+  padding: 7px;
+}
+
+.smallData {
+  font-size: smaller;
+}
