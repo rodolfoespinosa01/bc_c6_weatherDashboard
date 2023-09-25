@@ -33,21 +33,63 @@
 
       <section class="sectionRight">
         <section class="topRight">
-          <h1 class="dataResult"><span id="cityResult">Atlanta </span><span id="dateResult">(9/13/2022)</span></h1>
+          <h1 class="dataResult"><span id="cityResult">Time to search!</span><span id="todaysDateResult"></span></h1>
           <div class="smallData">
-            <p class="dataResult">Temp: <span id="tempResult">76.62&deg;F</span></p>
-            <p class="dataResult"> Wind: <span id="windResult">8.43</span><span> MPH</span></p>
-            <p class="dataResult">Humidity: <span id="humidityResult">44</span><span> %</span></p>
+            <p class="dataResult">Temp: <span id="tempResult">n/a&deg;F</span></p>
+            <p class="dataResult"> Wind: <span id="windResult">n/a</span><span> MPH</span></p>
+            <p class="dataResult">Humidity: <span id="humidityResult">n/a</span><span> %</span></p>
           </div>
 
         </section>
         <section class="bottomLeft">
+          <h3>5-Day Forecast:</h3>
+          <div id="fiveDay_section">
+            <span class="fiveDay" id="day1">
+              <h4 id="plus1Day">09/14/2022</h4>
+              <div>&#9728;&#65039;</div>
+              <p>Temp: <span id="temp1Result">n/a&deg;F</span></p>
+              <p> Wind: <span id="wind1Result">n/a</span><span> MPH</span></p>
+              <p>Humidity: <span id="humidity1Result">n/a</span><span> %</span></p>
+            </span>
+            <span class="fiveDay" id="day2">
+              <h4 id="plus2Days">09/14/2022</h4>
+              <div>&#9728;&#65039;</div>
+              <p>Temp: <span id="temp2Result">n/a&deg;F</span></p>
+              <p> Wind: <span id="wind2Result">n/a</span><span> MPH</span></p>
+              <p>Humidity: <span id="humidity2Result">n/a</span><span> %</span></p>
+            </span>
+            <span class="fiveDay" id="day3">
+              <h4 id="plus3Days">09/14/2022</h4>
+              <div>&#9728;&#65039;</div>
+              <p>Temp: <span id="temp3Result">n/a&deg;F</span></p>
+              <p> Wind: <span id="wind3Result">n/a</span><span> MPH</span></p>
+              <p>Humidity: <span id="humidity3Result">n/a</span><span> %</span></p>
+            </span>
+            <span class="fiveDay" id="day4">
+              <h4 id="plus4Days">09/14/2022</h4>
+              <div>&#9728;&#65039;</div>
+              <p>Temp: <span id="temp4Result">n/a&deg;F</span></p>
+              <p> Wind: <span id="wind4Result">n/a</span><span> MPH</span></p>
+              <p>Humidity: <span id="humidity4Result">n/a</span><span> %</span></p>
+            </span>
+            <span class="fiveDay" id="day5">
+              <h4 id="plus5Days">09/14/2022</h4>
+              <div>&#9728;&#65039;</div>
+              <p>Temp: <span id="temp5Result">n/a&deg;F</span></p>
+              <p> Wind: <span id="wind5Result">n/a</span><span> MPH</span></p>
+              <p>Humidity: <span id="humidity5Result">n/a</span><span> %</span></p>
+            </span>
+          </div>
 
         </section>
       </section>
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 

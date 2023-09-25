@@ -89,6 +89,48 @@ header p {
   padding: 7px;
 }
 
+#todaysDateResult {
+  margin-left: 7px;
+}
+
 .smallData {
   font-size: smaller;
+}
+
+/* Bottom Right Section */
+
+.bottomLeft h3 {
+  margin-top: 8px;
+}
+
+.fiveDay {
+
+  display: block;
+  width: 150px;
+  background-color: #323d4f;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.fiveDay h4,
+.fiveDay p {
+  color: white;
+}
+
+.fiveDay h4,
+.fiveDay div {
+  margin-top: 5px;
+}
+
+.fiveDay p {
+  font-size: smaller;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+#fiveDay_section {
+  display: flex;
+  margin-top: 5px;
+
 }
