@@ -1,53 +1,44 @@
 
-var APIKey = "356fd7845f0465041cd8fd6125096712";
-var city;
 
-var userInput = document.getElementById("userInput");
-var searchButton = document.getElementById("searchButton");
 
+var cityInput = document.querySelector('#cityInput');
+var APIKey = '356fd7845f0465041cd8fd6125096712';
+var searchButton = document.querySelector('#searchButton');
 var todaysDate = dayjs().format('M/DD/YYYY');
-var plus1Day = dayjs().add(1, 'day').format('M/DD/YYYY');
-var plus2Days = dayjs().add(2, 'day').format('M/DD/YYYY');
-var plus3Days = dayjs().add(3, 'day').format('M/DD/YYYY');
-var plus4Days = dayjs().add(4, 'day').format('M/DD/YYYY');
-var plus5Days = dayjs().add(5, 'day').format('M/DD/YYYY');
+
+function displayCurrent() {
+
+}
+
+function displayForecast() {
+
+}
+
+function getForecast(city) {
+  var fiveDayAPI = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=' + APIKey;
+  fetch(fiveDayAPI)
+    .then(function (res) {
+      return res.json();
+    }).then(function (data) {
+      var filterByMidDay = data.list.filter(function (day) {
+        if (day.dt_txt.split(' ')[1] === '12:00:00') {
+          return day;
+        }
+
+      }); console.log(filterByMidDay);
+    })
+}
 
 
+function getCurrent(city) {
+
+  var url = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + city + " &appid=" + APIKey;
+
+  fetch(url).then(function (res) {
+    return res.json();
+  }).then(function (data) {
 
 
-
-
-
-
-
-
-
-
-function getUserInput() {
-
-  // city = userInput.value.trim();
-
-  // if (!city) return;
-  var queryURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=New York" + "&appid=" + APIKey;
-  $.get(queryURL).then(function (data) {
-    (console.log(data));
-
-    var dtResult = data.dt;
-    var timestampMilliseconds = data.dt * 1000;
-    var date = new Date(timestampMilliseconds);
-    var estTimeZone = -5 * 60 * 60 * 1000;
-    date.setTime(date.getTime() + estTimeZone);
-
-
-    var month = date.getMonth() + 1;
-    var day = date.getDate();
-    var year = date.getFullYear();
-
-    console.log(month);
-
-
-
-    // Current Date
     var cityResult = document.getElementById('cityResult');
     cityResult.innerHTML = data.name;
 
@@ -63,60 +54,15 @@ function getUserInput() {
     var humidityResult = document.getElementById('humidityResult');
     humidityResult.innerHTML = data.main.humidity;
 
-    // Plus one day
-
-    // var cityResult = document.getElementById('city1Result');
-    // cityResult.innerHTML = data.name;
-
-    var dateResult = document.getElementById('plus1Day');
-    dateResult.innerHTML = plus1Day;
-
-    // var tempResult = document.getElementById('temp1Result');
-    // tempResult.innerHTML = data.main.temp + '&deg;F';
-
-    // var windResult = document.getElementById('wind1Result');
-    // windResult.innerHTML = data.wind.speed;
-
-    // var humidityResult = document.getElementById('humidity1Result');
-    // humidityResult.innerHTML = data.main.humidity;
-
-
-
-  });
-
-
-
-
-
-
+  })
 }
-// searchButton.addEventListener('click', getUserInput)
-getUserInput();
+
+function getWeather() {
+  var city = cityInput.value;
+  getCurrent(city);
+  getForecast(city);
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+searchButton.addEventListener('click', getWeather);

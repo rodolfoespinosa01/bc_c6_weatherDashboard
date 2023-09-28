@@ -28,3 +28,6 @@ https://github.com/rodolfoespinosa01/bc_c6_weatherDashboard
 #### SCREENSHOT OF WEBSITE BELOW
 
 
+
+
+<!-- checkout screenrecord wed sep27 9:43am -->
