@@ -20,14 +20,7 @@
         <input type="text" placeholder="Enter city name" id="cityInput">
         <button id="searchButton">Search</button>
         <hr>
-        <button class="cityButton">Atlanta</button>
-        <button class="cityButton">Denver</button>
-        <button class="cityButton">Seattle</button>
-        <button class="cityButton">San Francisco</button>
-        <button class="cityButton">Orlando</button>
-        <button class="cityButton">New York</button>
-        <button class="cityButton">Chicago</button>
-        <button class="cityButton">Austin</button>
+        <div class="cityButton" id="buttonContainer"></div>
       </section>
 
 
@@ -45,35 +38,35 @@
           <h3>5-Day Forecast:</h3>
           <div id="fiveDay_section">
             <span class="fiveDay" id="day1">
-              <h4 id="plus1Day">09/14/2022</h4>
+              <h4 id="plus1Day">n/a</h4>
               <div>&#9728;&#65039;</div>
               <p>Temp: <span id="temp1Result">n/a&deg;F</span></p>
               <p> Wind: <span id="wind1Result">n/a</span><span> MPH</span></p>
               <p>Humidity: <span id="humidity1Result">n/a</span><span> %</span></p>
             </span>
             <span class="fiveDay" id="day2">
-              <h4 id="plus2Days">09/14/2022</h4>
+              <h4 id="plus2Days">n/a</h4>
               <div>&#9728;&#65039;</div>
               <p>Temp: <span id="temp2Result">n/a&deg;F</span></p>
               <p> Wind: <span id="wind2Result">n/a</span><span> MPH</span></p>
               <p>Humidity: <span id="humidity2Result">n/a</span><span> %</span></p>
             </span>
             <span class="fiveDay" id="day3">
-              <h4 id="plus3Days">09/14/2022</h4>
+              <h4 id="plus3Days">n/a</h4>
               <div>&#9728;&#65039;</div>
               <p>Temp: <span id="temp3Result">n/a&deg;F</span></p>
               <p> Wind: <span id="wind3Result">n/a</span><span> MPH</span></p>
               <p>Humidity: <span id="humidity3Result">n/a</span><span> %</span></p>
             </span>
             <span class="fiveDay" id="day4">
-              <h4 id="plus4Days">09/14/2022</h4>
+              <h4 id="plus4Days">n/a</h4>
               <div>&#9728;&#65039;</div>
               <p>Temp: <span id="temp4Result">n/a&deg;F</span></p>
               <p> Wind: <span id="wind4Result">n/a</span><span> MPH</span></p>
               <p>Humidity: <span id="humidity4Result">n/a</span><span> %</span></p>
             </span>
             <span class="fiveDay" id="day5">
-              <h4 id="plus5Days">09/14/2022</h4>
+              <h4 id="plus5Days">n/a</h4>
               <div>&#9728;&#65039;</div>
               <p>Temp: <span id="temp5Result">n/a&deg;F</span></p>
               <p> Wind: <span id="wind5Result">n/a</span><span> MPH</span></p>
@@ -90,7 +83,9 @@
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="./assets/js/searchHistory.js"></script>
     <script src="./assets/js/main.js"></script>
+   
   </body>
 
 </html>

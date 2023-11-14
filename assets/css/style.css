@@ -53,11 +53,14 @@ header p {
   border-radius: 5px;
   border: none;
   font-size: small;
+  text-align: center;
 }
 
 .cityButton {
   background-color: #aeaeae;
-  color: #1f2023
+  color: #1f2023;
+ text-align: center;
+ border-radius: 5px;
 }
 
 #userInput {
