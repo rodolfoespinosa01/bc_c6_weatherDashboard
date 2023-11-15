@@ -100,7 +100,7 @@ function getForecast(city) {
 
 function getCurrent(city) {
   var url =
-    "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=" +
+    "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" +
     city +
     " &appid=" +
     APIKey;
