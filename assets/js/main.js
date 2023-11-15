@@ -14,7 +14,7 @@ function displayForecast() {}
 
 function getForecast(city) {
   var fiveDayAPI =
-    "https://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=" +
     city +
     "&appid=" +
     APIKey;
@@ -29,21 +29,12 @@ function getForecast(city) {
         }
       });
 
-      // Function to convert temperature from Kelvin to Fahrenheit
-      function kTOf(tempInKelvin) {
-        // Conversion formula: (K - 273.15) * 9/5 + 32
-        const tempInFahrenheit = ((tempInKelvin - 273.15) * 9) / 5 + 32;
-
-        // Round to the nearest whole number
-        return Math.round(tempInFahrenheit);
-      }
-
       // Plus 1 day
       var dateResult = document.getElementById("plus1Day");
       dateResult.innerHTML = "(" + plus1Day + ")";
 
       var tempResult = document.getElementById("temp1Result");
-      tempResult.innerHTML = kTOf(filterByMidDay[0].main.temp) + "&deg;F";
+      tempResult.innerHTML = filterByMidDay[0].main.temp + "&deg;F";
 
       var windResult = document.getElementById("wind1Result");
       windResult.innerHTML = filterByMidDay[0].wind.speed;
@@ -56,7 +47,7 @@ function getForecast(city) {
       dateResult.innerHTML = "(" + plus2Days + ")";
 
       var tempResult = document.getElementById("temp2Result");
-      tempResult.innerHTML = kTOf(filterByMidDay[1].main.temp) + "&deg;F";
+      tempResult.innerHTML = filterByMidDay[1].main.temp + "&deg;F";
 
       var windResult = document.getElementById("wind2Result");
       windResult.innerHTML = filterByMidDay[1].wind.speed;
@@ -69,7 +60,7 @@ function getForecast(city) {
       dateResult.innerHTML = "(" + plus3Days + ")";
 
       var tempResult = document.getElementById("temp3Result");
-      tempResult.innerHTML = kTOf(filterByMidDay[2].main.temp) + "&deg;F";
+      tempResult.innerHTML = filterByMidDay[2].main.temp + "&deg;F";
 
       var windResult = document.getElementById("wind3Result");
       windResult.innerHTML = filterByMidDay[2].wind.speed;
@@ -82,7 +73,7 @@ function getForecast(city) {
       dateResult.innerHTML = "(" + plus4Days + ")";
 
       var tempResult = document.getElementById("temp4Result");
-      tempResult.innerHTML = kTOf(filterByMidDay[3].main.temp) + "&deg;F";
+      tempResult.innerHTML = filterByMidDay[3].main.temp + "&deg;F";
 
       var windResult = document.getElementById("wind4Result");
       windResult.innerHTML = filterByMidDay[3].wind.speed;
@@ -95,7 +86,7 @@ function getForecast(city) {
       dateResult.innerHTML = "(" + plus5Days + ")";
 
       var tempResult = document.getElementById("temp5Result");
-      tempResult.innerHTML = kTOf(filterByMidDay[4].main.temp) + "&deg;F";
+      tempResult.innerHTML = filterByMidDay[4].main.temp + "&deg;F";
 
       var windResult = document.getElementById("wind5Result");
       windResult.innerHTML = filterByMidDay[4].wind.speed;
