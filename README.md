@@ -1,6 +1,4 @@
-# Project Title
-
-## Generate Password Homework Challenge
+# Weather Dashboard
 
 ## Description
 
