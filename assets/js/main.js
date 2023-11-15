@@ -133,6 +133,11 @@ function getWeather() {
   var city = cityInput.value;
   getCurrent(city);
   getForecast(city);
+
+  createCityButton(city);
+
+  cityInput.value = "";
 }
 
+// Add an event listener to the "Search" button
 searchButton.addEventListener("click", getWeather);

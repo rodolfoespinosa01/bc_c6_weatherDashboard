@@ -41,7 +41,15 @@ header p {
 
 #searchButton {
   background-color: #6991e3;
-  color: #e1e2e2
+  color: #e1e2e2;
+  cursor: pointer;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
 }
 
 .sectionLeft>* {
@@ -50,7 +58,7 @@ header p {
 
 .sectionLeft button {
   padding: 5px;
-  border-radius: 5px;
+  margin:5px;
   border: none;
   font-size: small;
   text-align: center;
@@ -61,7 +69,11 @@ header p {
   color: #1f2023;
  text-align: center;
  border-radius: 5px;
+ margin: 5px;
+ width: 100%;
+ cursor: pointer;
 }
+
 
 #userInput {
   padding: 10px;
