@@ -94,7 +94,6 @@ function getForecast(city) {
       var humidityResult = document.getElementById("humidity5Result");
       humidityResult.innerHTML = filterByMidDay[4].main.humidity;
 
-      console.log(filterByMidDay);
     });
 }
 
@@ -125,7 +124,6 @@ function getCurrent(city) {
       var humidityResult = document.getElementById("humidityResult");
       humidityResult.innerHTML = data.main.humidity;
 
-      console.log(data);
     });
 }
 
